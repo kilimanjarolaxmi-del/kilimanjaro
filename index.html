@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Life Dashboard</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+    overflow-x: hidden;
+}
+
+/* Dashboard layout */
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+/* Sections */
+.section {
+    background: rgba(255,255,255,0.85);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #d63384;
+}
+
+/* Floral decoration */
+.flower {
+    position: fixed;
+    width: 80px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.flower.one { top: 10px; left: 10px; }
+.flower.two { bottom: 10px; right: 10px; }
+
+/* Snow effect */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Video styling */
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floral decorations -->
+<img class="flower one" src="https://cdn-icons-png.flaticon.com/512/616/616490.png">
+<img class="flower two" src="https://cdn-icons-png.flaticon.com/512/616/616490.png">
+
+<div class="container">
+    <h1>🌸 My Personal Dashboard ❄️</h1>
+
+    <div class="section">
+        <h2>Bucket List</h2>
+        <ul>
+            <li>Travel to Japan</li>
+            <li>Learn to dance K-pop</li>
+            <li>Start a YouTube channel</li>
+            <li>Skydive once in life</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Travel Diary</h2>
+        <p>✈️ Bali - Amazing beaches and sunsets</p>
+        <p>🏔️ Switzerland - Snow mountains experience</p>
+        <p>🌆 Singapore - City lights and food tour</p>
+    </div>
+
+    <div class="section">
+        <h2>Content Video</h2>
+        <video controls>
+            <source src="your-content-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="section">
+        <h2>Dance Video</h2>
+        <video controls>
+            <source src="your-dance-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="section">
+        <h2>Game Challenge Video</h2>
+        <video controls>
+            <source src="your-game-video.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<!-- Snow Generator -->
+<script>
+for (let i = 0; i < 50; i++) {
+    let snow = document.createElement("div");
+    snow.className = "snowflake";
+    snow.innerHTML = "❄";
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.animationDuration = (Math.random() * 5 + 3) + "s";
+    snow.style.fontSize = Math.random() * 10 + 10 + "px";
+    document.body.appendChild(snow);
+}
+</script>
+
+</body>
+</html>
