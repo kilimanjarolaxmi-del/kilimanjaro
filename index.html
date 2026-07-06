@@ -38,23 +38,41 @@
 
   section {
     background: rgba(0,0,0,0.25);
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
     border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   h2 {
-    border-left: 5px solid #fff;
+    border-left: 5px solid #ffd1ff;
     padding-left: 10px;
     margin-top: 0;
+    font-size: 24px;
+    color: #ffd1ff;
   }
 
   h3 {
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
   }
 
-  ul {
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #ffd1ff;
+  }
+
+  ul, ol {
     margin-top: 5px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
   }
 
   .highlight {
@@ -62,26 +80,73 @@
     opacity: 0.9;
   }
 
-  .email {
+  .email-link {
     color: #ffd1ff;
     font-weight: bold;
+    text-decoration: none;
+    background: rgba(0,0,0,0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
   }
 
-  /* Image responsive styling */
+  .email-link:hover {
+    text-decoration: underline;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: rgba(106, 13, 173, 0.6);
+  }
+
+  /* Target images based on instructions */
   .section-image {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 15px auto 0 auto;
+    margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .faq-q {
+    font-weight: bold;
+    color: #ffd1ff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .faq-a {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
   }
 
   footer {
     text-align: center;
-    padding: 20px;
-    font-size: 12px;
+    padding: 30px;
+    font-size: 13px;
     opacity: 0.7;
+    background: rgba(0,0,0,0.2);
+    margin-top: 40px;
   }
 </style>
 </head>
@@ -92,102 +157,361 @@
   <h1>Employee Knowledge Portal</h1>
   <p>Welcome to Daythree!</p>
   <p class="highlight">
-    Whether you are a new joiner or an existing employee, this portal helps you access HR information, benefits, and workplace resources easily.
+    Whether you are a new joiner or an existing employee, this portal is designed to help you quickly and easily access the information you need.
+    Our goal is to make your transition smooth by providing easy access to HR information, employee benefits, and workplace resources—all in one place.
   </p>
-  <p>"Knowledge is only valuable when it's easy to access."</p>
+  <p><strong>"Knowledge is only valuable when it's easy to access."</strong></p>
 </header>
 
 <div class="container">
 
-<!-- Leave Entitlement -->
-<section>
+<!-- Leave Entitlement Section -->
+<section id="leave-entitlement">
   <h2>Leave Entitlement</h2>
-  <p>Daythree provides various leave types to support work-life balance.</p>
+  <h3>Leave Benefits</h3>
+  <p>Daythree provides various types of leave to support employees' work-life balance and well-being.</p>
+  <p>Your leave entitlement depends on:</p>
   <ul>
     <li>Employment type</li>
     <li>Years of service</li>
     <li>Employment contract</li>
   </ul>
-  <!-- Picture 1 and Picture 2 added here -->
-  <img src="picture1.jpeg.png" alt="Leave Entitlement Overview" class="section-image" />
-  <img src="picture2.jpeg.png" alt="Leave Entitlement Policy Details" class="section-image" />
-</section> guide
-
-<!-- Dress Code -->
-<section>
-  <h2>Dress Code</h2>
-  <h3>Professional Appearance</h3>
-  <ul>
-    <li>Dress neatly and professionally</li>
-    <li>Maintain good grooming</li>
-    <li>Follow client-specific requirements</li>
-  </ul>
-  <!-- Picture 3 added here -->
-  <img src="picture3.jpeg.png" alt="Dress Code Guidelines" class="section-image" />
+  
+  <h3>Types of Leave</h3>
+  <!-- Picture 1 and Picture 2 explicitly placed under Leave Entitlement -->
+  <img src="picture1.jpeg.png" alt="Types of Leave Chart - Part 1" class="section-image" />
+  <img src="picture2.jpeg.png" alt="Types of Leave Chart - Part 2" class="section-image" />
 </section>
 
-<!-- Overtime -->
-<section>
+<!-- Dress Code Section -->
+<section id="dress-code">
+  <h2>Dress Code</h2>
+  <h3>Professional Appearance</h3>
+  <p>Employees are expected to maintain a professional appearance and dress appropriately for the working environment.</p>
+  <p>Depending on the business or client assignment, additional dress code requirements may be communicated by your Manager or Supervisor.</p>
+  
+  <h3>General Guidelines</h3>
+  <p>✅ Dress neatly and professionally</p>
+  <p>✅ Maintain good personal grooming</p>
+  <p>✅ Follow client-specific dress requirements</p>
+  
+  <!-- Picture 3 explicitly placed under Dress Code -->
+  <img src="picture3.jpeg.png" alt="Dress Code Restrictions - What we cant wear" class="section-image" />
+</section>
+
+<!-- Overtime Section -->
+<section id="overtime">
   <h2>Overtime Policy</h2>
-  <p>Overtime is subject to approval and operational needs.</p>
+  <p>Employees may be required to work overtime based on operational requirements and with prior approval from their supervisor.</p>
+  <p>Overtime eligibility and payment are subject to:</p>
   <ul>
     <li>Employment Act requirements</li>
     <li>Company policy</li>
     <li>Client requirements</li>
   </ul>
+  <p>All work done before/beyond normal hours of work shall be compensated at the following rates.</p>
+  
+  <!-- Picture 4 explicitly placed under Overtime Policy -->
+  <img src="picture4_jpeg.png" alt="Overtime Calculation Rates Table" class="section-image" />
 
-  <h3>Public Holidays</h3>
-  <p>Employees follow assigned public holidays based on role and campaign.</p>
-  <!-- Picture 4 added here -->
-  <img src="picture4_jpeg.png" alt="Overtime & Public Holidays" class="section-image" />
+  <h3>Public Holiday</h3>
+  <p>You will follow the public holidays assigned to you based on your job role and campaign you are serving.</p>
 </section>
 
-<!-- Grievance -->
-<section>
+<!-- Grievance Section -->
+<section id="grievance">
   <h2>Grievance Procedure</h2>
-  <p>Raise concerns related to workplace issues confidentially.</p>
-  <p>Email: <span class="email">askhr@daythree.co</span></p>
-</section>
-
-<!-- Whistleblowing -->
-<section>
-  <h2>Whistleblowing</h2>
-  <p>Report unethical or unlawful conduct safely.</p>
-  <p>Email: <span class="email">whistleblowing@daythree.co</span></p>
-</section>
-
-<!-- Workplace Safety -->
-<section>
-  <h2>Workplace Safety</h2>
-  <p>Smoking/vaping is strictly prohibited in non-designated areas.</p>
+  <h3>Need to Raise a Concern?</h3>
+  <p>We encourage employees to speak up whenever they experience concerns relating to:</p>
   <ul>
-    <li>RM100 fine by building management</li>
-    <li>Possible disciplinary action</li>
+    <li>Work environment</li>
+    <li>Working relationships</li>
+    <li>Unfair treatment</li>
+    <li>Workplace issues</li>
+    <li>Employment matters</li>
+  </ul>
+  <p>Our grievance process ensures concerns are handled fairly, confidentially, and professionally.</p>
+  <p><strong>Contact:</strong></p>
+  <p>👤 Your HR Business Partner</p>
+  <p>📧 Email: <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a></p>
+</section>
+
+<!-- Whistleblowing Section -->
+<section id="whistleblowing">
+  <h2>Whistleblowing</h2>
+  <h3>Speak Up With Confidence</h3>
+  <p>Daythree encourages employees to report genuine concerns regarding unethical or unlawful conduct.</p>
+  <p>Employees who report concerns in good faith will be protected from retaliation.</p>
+  <p>📧 <strong>Email:</strong> <a href="mailto:whistleblowing@daythree.co" class="email-link">whistleblowing@daythree.co</a></p>
+</section>
+
+<!-- Workplace Safety Section -->
+<section id="workplace-safety">
+  <h2>🚭 Workplace Safety</h2>
+  <h3>Smoking or Vaping in Prohibited Areas</h3>
+  <p>Smoking and vaping are strictly prohibited in all designated non-smoking areas within the workplace and building premises.</p>
+  <p>Employees must comply with both Company policy and building management regulations at all times.</p>
+  
+  <h3>⚠️ Consequences of Violation</h3>
+  <p>If an employee is found smoking or vaping in prohibited areas:</p>
+  <ul>
+    <li>A fine of RM100 will be imposed by the building management</li>
+    <li>The fine must be paid directly to the building management</li>
+    <li>Disciplinary action will be taken by the Company in accordance with HR policy</li>
+  </ul>
+  
+  <h3>🚫 Failure to Pay Fine</h3>
+  <p>If the RM100 fine is not settled:</p>
+  <ul>
+    <li>The building management may restrict or block lobby/access privileges for the employee</li>
+    <li>This may impact the employee’s ability to enter or access the premises</li>
   </ul>
 </section>
 
-<!-- FAQ -->
-<section>
-  <h2>FAQ Highlights</h2>
+<!-- Comprehensive FAQ Section -->
+<section id="faq">
+  <h2>FAQ</h2>
 
-  <h3>Payroll</h3>
-  <p>Payslip available within 4 working days after salary credit.</p>
+  <h3>💰 Payroll</h3>
+  
+  <p class="faq-q">📄 When and how can I request my payslip?</p>
+  <div class="faq-a">
+    <p>Your payslip will be available within four (4) working days after your salary has been credited.</p>
+    <p>If you have not received your payslip after this period, please email: <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a></p>
+  </div>
 
-  <h3>Medical Claims</h3>
-  <p>Claims must be submitted via Faith system with valid receipts.</p>
+  <p class="faq-q">🕌 How can I set up Zakat deductions from my salary?</p>
+  <div class="faq-a">
+    <p>Employees may register directly through the official Zakat website for their respective state. For example:</p>
+    <ul>
+      <li>Zakat Selangor</li>
+      <li>Zakat Pulau Pinang</li>
+      <li>Zakat Wilayah Persekutuan (According to your state)</li>
+    </ul>
+    <p>During registration, use <span class="email-link">askhr@daythree.co</span> as your employer's email address. The Zakat office will notify Daythree directly. Once confirmation is received, the monthly deduction will be processed through payroll.</p>
+  </div>
 
-  <h3>Leave</h3>
-  <p>Apply early and obtain manager approval before making plans.</p>
+  <p class="faq-q">🌍 EPF & SOCSO refunds for foreigners leaving Malaysia</p>
+  <div class="faq-a">
+    <p><strong>EPF:</strong> Foreign employees may withdraw their EPF contributions upon permanently leaving Malaysia, subject to EPF regulations.</p>
+    <p><strong>SOCSO:</strong> SOCSO contributions are not refundable.</p>
+  </div>
 
-  <h3>Resignation</h3>
-  <p>Inform supervisor and serve notice period as per contract.</p>
+  <p class="faq-q">💵 How does income tax work for foreign employees?</p>
+  <div class="faq-a">
+    <p>Foreign employees are required to pay Malaysian income tax. Tax treatment depends on your tax residency status.</p>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Residency Status</th>
+            <th>Tax Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Resident</strong> (Stayed more than 182 days)</td>
+            <td>Progressive tax rates (0%–30%)</td>
+          </tr>
+          <tr>
+            <td><strong>Non-Resident</strong></td>
+            <td>Flat rate of 30%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="faq-q">When is salary paid?</p>
+  <div class="faq-a">
+    <p>Salary is normally credited on the last working day of each month, unless otherwise communicated by the Company. Employees will be informed in advance if there are any changes due to public holidays or operational requirements.</p>
+  </div>
+
+  <p class="faq-q">How do I update my bank account details?</p>
+  <div class="faq-a">
+    <p>To update your salary bank account details, submit your request to HR together with supporting documents (such as a copy of your bank statement or account details). The update must be completed before the payroll cut-off date to take effect for the current payroll cycle. For assistance, email <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>.</p>
+  </div>
+
+  <p class="faq-q">How do I update my EPF nomination?</p>
+  <div class="faq-a">
+    <p>EPF nominations must be updated directly with the Employees Provident Fund (EPF/KWSP). Employees can update their nomination by visiting any EPF branch, or using EPF's online services (where applicable).</p>
+  </div>
+
+  <p class="faq-q">How can I request an Employment Confirmation Letter or Salary Letter?</p>
+  <div class="faq-a">
+    <p>Employees may request employment-related letters by emailing <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>. Please specify the type of letter required, purpose of the request, and any specific information that should be included. Please allow several working days for processing.</p>
+  </div>
+
+  <p class="faq-q">What is EV Portal?</p>
+  <div class="faq-a">
+    <p>"EV Portal" refers to the Employee Verification Portal, a platform where all new candidates must verify their personal details through the provided link to ensure a smooth payroll process.</p>
+  </div>
+
+  <p class="faq-q">What is the company’s bank panel for salary?</p>
+  <div class="faq-a">
+    <p>RHB Bank</p>
+  </div>
+
+
+  <h3>🏥 Medical Benefits</h3>
+  
+  <p class="faq-q">Can unused medical claims be carried forward?</p>
+  <div class="faq-a">
+    <p>No. Medical claims operate on a Pay & Claim basis. Unused monthly claim entitlement cannot be carried forward or accumulated.</p>
+  </div>
+
+  <p class="faq-q">How do I submit a medical claim?</p>
+  <div class="faq-a">
+    <p>Medical claims should be submitted via faith system according to the Company's medical claim procedure. Please ensure you provide:</p>
+    <ul>
+      <li>Original receipt of medical</li>
+      <li>Medical certificate (if applicable)</li>
+    </ul>
+    <p>Claims should be submitted within the stipulated timeline for reimbursement. Incomplete submissions may delay reimbursement.</p>
+    <p>Medical reimbursement will be processed after the claim has been verified and approved in the system. If the claim is approved by the 24th of the month, it will be reimbursed in the same payroll cycle. If the claim is approved after the payroll cut-off date (24th), it will be reimbursed in the following month’s payroll cycle. Employees are encouraged to submit claims early and ensure all required documents are complete to avoid delays.</p>
+  </div>
+
+
+  <h3>🎓 Leave & Working Arrangements</h3>
+  
+  <p class="faq-q">Can I request a special working arrangement if I am a part-time student?</p>
+  <div class="faq-a">
+    <p>Employees are required to follow the work schedules assigned by the Operations team. Special work arrangements cannot be guaranteed.</p>
+    <p>If you need to attend examinations:</p>
+    <ol>
+      <li>Apply for Annual Leave.</li>
+      <li>Submit your examination timetable.</li>
+      <li>Obtain approval from your Operations Manager.</li>
+      <li>Apply through the Faith system following the normal leave application process.</li>
+    </ol>
+  </div>
+
+  <p class="faq-q">How do I apply for Time Off (TO)?</p>
+  <div class="faq-a">
+    <p>Time Off (TO) requests require approval from your Operations Manager (OM). Before submitting your request:</p>
+    <ul>
+      <li>Inform your Team Leader (TL).</li>
+      <li>Obtain OM approval.</li>
+      <li>Submit your request through the required process.</li>
+    </ul>
+    <p>Maximum Time Off allocation: 2 hours.</p>
+  </div>
+
+  <p class="faq-q">1. How do I check my leave balance?</p>
+  <div class="faq-a">
+    <p>You can view your leave balance by logging into the Faith HR System. The system displays your available leave entitlement, leave history, and upcoming approved leave.</p>
+    <p>If you believe your leave balance is incorrect, please reach out to your immediate superior, or email to <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>.</p>
+  </div>
+
+  <p class="faq-q">2. When will my leave be approved?</p>
+  <div class="faq-a">
+    <p>Leave approval depends on operational requirements and your manager's approval. Employees are encouraged to submit leave requests as early as possible to allow sufficient time for review.</p>
+    <p><strong>Please do not make personal commitments or travel arrangements until your leave has been officially approved in the Faith system.</strong></p>
+  </div>
+
+  <p class="faq-q">3. Can I cancel or amend my approved leave?</p>
+  <div class="faq-a">
+    <p>Yes. If you wish to cancel or amend an approved leave request, please inform your immediate supervisor as soon as possible. The cancellation or amendment must also be updated in the Faith system and is subject to your manager's approval.</p>
+  </div>
+
+  <p class="faq-q">4. What happens if I fall sick while on Annual Leave?</p>
+  <div class="faq-a">
+    <p>If you become ill during your Annual Leave and obtain a valid Medical Certificate (MC) from a registered medical practitioner, you should notify your immediate supervisor promptly and submit your MC through the company's prescribed process. The Company will review the request in accordance with the Company's leave policy.</p>
+  </div>
+
+
+  <h3>💰 Performance & Salary</h3>
+  
+  <p class="faq-q">Will there be bonuses or salary increments?</p>
+  <div class="faq-a">
+    <p>Performance bonuses are not provided, as employee performance is assessed on a monthly basis through Key Performance Indicators (KPIs).</p>
+    <p>Salary increments are reviewed based on your overall annual performance, business needs, and company policies.</p>
+  </div>
+
+
+  <h3>🤝 Employee Relations</h3>
+  
+  <p class="faq-q">I have a complaint about someone. What should I do?</p>
+  <div class="faq-a">
+    <p>If you experience workplace issues or wish to raise a grievance, please report the matter as soon as possible. You may:</p>
+    <ul>
+      <li>Speak with your assigned HR Business Partner (HRBP).</li>
+      <li>Submit your concern via email to <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>.</li>
+    </ul>
+    <p>All concerns will be handled professionally, fairly, and confidentially in accordance with the Company's Grievance Procedure.</p>
+  </div>
+
+
+  <h3>📢 HR Communication</h3>
+  
+  <p class="faq-q">How can I stay updated with HR announcements?</p>
+  <div class="faq-a">
+    <p>To stay informed about company updates, please regularly check: <strong>📢 Company Memos - Faith portal</strong></p>
+    <p>These channels provide updates on HR policies, employee benefits, events, and important company announcements.</p>
+  </div>
+
+
+  <h3>👥 HR Support & Logistics</h3>
+  
+  <p class="faq-q">Who is my HR Business Partner (HRBP)?</p>
+  <div class="faq-a">
+    <p>Each business unit is assigned an HR Business Partner (HRBP) who supports employees on HR-related matters. If you are unsure who your HRBP is, please email <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>, and your enquiry will be directed to the appropriate HR representative.</p>
+  </div>
+
+  <p class="faq-q">How do I update my personal information?</p>
+  <div class="faq-a">
+    <p>If there are any changes to your Home address, Mobile number, Emergency contact, Marital status, Personal email, or Educational qualifications, please notify HR promptly and submit your updated details via email to <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>. Supporting documents may be required for certain updates.</p>
+  </div>
+
+  <p class="faq-q">14. How do I submit my resignation?</p>
+  <div class="faq-a">
+    <p>Employees who wish to resign should inform their immediate supervisor and submit their resignation. You must serve the required notice period as stated in your Employment Contract. HR will guide employees through the clearance and exit process.</p>
+  </div>
+
+  <p class="faq-q">Who should I contact if I have questions about a policy?</p>
+  <div class="faq-a">
+    <p>If you require clarification on any company policy, please contact your HR Business Partner or email <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a>. We are happy to assist and ensure you have the correct information.</p>
+  </div>
+
+
+  <h3>🚀 Career Development</h3>
+  
+  <p class="faq-q">Where can I view internal job vacancies?</p>
+  <div class="faq-a">
+    <p>Internal vacancies are announced through official company communication channels in the Faith system.</p>
+  </div>
+
+
+  <h3>🔒 Information Security</h3>
+  
+  <p class="faq-q">What should I do if I receive a suspicious email?</p>
+  <div class="faq-a">
+    <p>Do not click on any links or download attachments from suspicious emails. Report the email immediately to the IT Helpdesk and delete it only after receiving guidance from IT.</p>
+  </div>
+
+  <p class="faq-q">Can I use my personal email to send company information?</p>
+  <div class="faq-a">
+    <p>No. Company information should only be shared using approved company systems and email accounts. Sharing confidential information through personal email or unauthorized platforms is strictly prohibited and may result in disciplinary action.</p>
+  </div>
+
+
+  <h3>🌟 Employee Benefits</h3>
+  
+  <p class="faq-q">How can I enjoy corporate discounts offered by Daythree?</p>
+  <div class="faq-a">
+    <p>Daythree employees may enjoy exclusive corporate discounts with selected partners, including <strong>Grab, foodpanda, Proton, INTI International College, and Celebrity Fitness</strong>.</p>
+  </div>
+
 </section>
 
-<!-- HR Support -->
-<section>
+<!-- Dedicated HR Support Segment -->
+<section id="hr-support">
   <h2>HR Support</h2>
-  <p>For HR assistance, contact:</p>
-  <p class="email">askhr@daythree.co</p>
+  <p>For HR assistance, contact your assigned HR representative or use the master inbox:</p>
+  <p>📧 <a href="mailto:askhr@daythree.co" class="email-link">askhr@daythree.co</a></p>
+  <p class="highlight" style="font-size: 14px; margin-top: 15px;">
+    This portal provides a comprehensive, user-friendly knowledge base that reduces repetitive HR enquiries while providing employees with clear guidance and self-service resources.
+  </p>
 </section>
 
 </div>
